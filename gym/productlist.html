@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>DeliFarm</title>
+      <meta name='keywords' content='' />
+      <meta name='description' content='' />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,
+         maximum-scale=1.0, user-scalable=no">
+      <meta property="og:title" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:site_name" content="">
+      <meta property="og:description" content="">
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+      <link rel='stylesheet' href='css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="header-section">
+         <div class="container">
+            <div class="box">
+               <a class="logo" href="#"><img src="images/logo.png"></a>
+               <div class="search-box">
+                  <input type="search" id="search" class="search-field" placeholder="Nhập tên sản phẩm để tìm" autocomplete="off" name="search">
+                  <button type="submit" id="searchButton" class="btn-search">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                     </svg>
+                  </button>
+               </div>
+               <div class="header-right">
+                  <div class="phone">
+                     <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                           <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                     </div>
+                     <div class="content">
+                        Gọi mua hàng
+                        <span>
+                        098 837 5232
+                        </span>
+                     </div>
+                  </div>
+                  <div class="box-cart">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                     </svg>
+                     <div class="number">
+                        3
+                     </div>
+                  </div>
+                  <div class="search-mb">
+                     <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <header>
+            <div class="container">
+               <nav class="navbar navbar-expand-lg">
+                  <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown sub_nav">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Whey Protein
+                           <img src="images/arrowmenu.svg" class="ml-1">
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Whey Protein Isolate</a></li>
+                              <li><a class="dropdown-item" href="#">Hydrolyzed Whey Protein</a></li>
+                              <li><a class="dropdown-item" href="#">Whey Protein Blend</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown sub_nav">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Sữa tăng cân
+                           <img src="images/arrowmenu.svg" class="ml-1">
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Whey Protein Isolate</a></li>
+                              <li><a class="dropdown-item" href="#">Hydrolyzed Whey Protein</a></li>
+                              <li><a class="dropdown-item" href="#">Whey Protein Blend</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item dropdown sale">
+                           <a  class="nav-link" href="#">
+                           <img src="images/flash.png">
+                           sale
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="mask"></div>
+               </nav>
+            </div>
+         </header>
+      </div>
+      <main class="main-body">
+         <div class="container">
+            
+           
+            <!--product-->
+            <div class="section_product mt-5">
+               <div class="heading-bar__title">
+                  <a  href="" >Whey Protein</a>
+               </div>
+              
+               <div class="row">
+                  <div class="col-sm-3">
+
+                  </div>
+                  <div class="col-sm-9">
+                     <div class="row product-list-row">
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-col">
+                           <div class="item_product_main">
+                              <a class="thumbnail">
+                                 <img src="images/8.jpg">
+                              </a>
+                              <div class="content">
+                                 <a href="" class="title">
+                                 ONE Bar - ONE Protein Bars, 4 Bars (20G Protein/Bar)
+                                 </a>
+                                 <div class="rate">
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                    <span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                          <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="price-box">
+                                    <span class="price">290.000₫</span>
+                                    <span class="compare-price">310.000₫</span>
+                                    <span class="label_product">
+                                    -6% 
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-center mt-3 col-12">
+                        <a href=""  class="btn btn-main">
+                           Xem thêm
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+         
+            </div>
+
+         </div>
+
+
+          
+         
+      </main>
+      <section class="footer_promotion">
+         <div class="container">
+            <div class="side_promotion">
+               <div class="item">
+                  <div class="icon">
+                     <img src="images/free-delivery.png">
+                  </div>
+                  <p>
+                     Miễn phí vận chuyển
+                  </p>
+               </div>
+               <div class="item">
+                  <div class="icon">
+                     <img src="images/badge.png">
+                  </div>
+                  <p>
+                     Thương hiệu chính hãng
+                  </p>
+               </div>
+               <div class="item">
+                  <div class="icon">
+                     <img src="images/support.png">
+                  </div>
+                  <p>
+                     Tư vấn nhiệt tình
+                  </p>
+               </div>
+               <div class="item">
+                  <div class="icon">
+                     <img src="images/piggy-bank.png">
+                  </div>
+                  <p>
+                     Tích điễm thành viên
+                  </p>
+               </div>
+               <div class="item">
+                  <div class="icon">
+                     <img src="images/money.png">
+                  </div>
+                  <p>
+                     Thanh toán tiện lợi
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="footer_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3  col-md-6 col-xs-12">
+                  <div class="fi-title">
+                     <h4 data-toggle="collapse" href="#collapse1">
+                        Giới thiệu công ty
+                     </h4>
+                     <div  id="collapse1" class="panel-collapse collapse content">
+                        <a href="">Thương hiệu nổi bật </a>
+                        <a href="">Thông tin tuyển dụng</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3  col-md-6 col-xs-12">
+                  <div class="fi-title">
+                     <h4 data-toggle="collapse" href="#collapse2">
+                        HỖ TRỢ KHÁCH HÀNG
+                     </h4>
+                     <div  id="collapse2" class="panel-collapse collapse content">
+                        <a href="">
+                        Hướng dẫn thanh toán
+                        </a>
+                        <a href=""> Hướng dẫn mua hàng Online</a>
+                        <a href="">Góp ý, Khiếu Nại</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3  col-md-6 col-xs-12">
+                  <div class="fi-title">
+                     <h4 data-toggle="collapse" href="#collapse3">
+                        Chính sách chung
+                     </h4>
+                     <div  id="collapse3" class="panel-collapse collapse content">
+                        <a href="">
+                        Chính sách, quy định chung
+                        </a>
+                        <a href=""> Chính sách đổi trả và hoàn tiền</a>
+                        <a href="">Chính sách vận chuyển hàng</a>
+                        <a href="">Bảo mật thông tin khách hàng</a>
+                        <a href="">
+                        Chính sách hàng chính hãng
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3  col-md-6 col-xs-12">
+                  <div class="fi-title">
+                     <h4 data-toggle="collapse" href="#collapse4">
+                        Sản phẩm nổi bật
+                     </h4>
+                     <div  id="collapse4" class="panel-collapse collapse content">
+                        <a href="">Sản phẩm mới</a>
+                        <a href="">Whey Protein</a>
+                        <a href="">Sữa Tăng Cân</a>
+                        <a href="">BCAA</a>
+                        <a href="">Creatine</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section   class="footer_bottom mt-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8">
+                  <p>
+                     © Bản quyền thuộc về TAO.
+                  </p>
+                  <p>
+                     Những sản phẩm đăng trên website này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.<br>
+                     Hình ảnh và Nutrition Facts của sản phẩm chỉ mang tính chất tham khảo bởi thành phần, mẫu mã nhà sản xuất có thể thay đổi bất cứ lúc nào mà TAO chưa thể cập nhật ngay lập tức.
+                  </p>
+               </div>
+               <div class="col-lg-4 d-flex">
+                  <a href="http://online.gov.vn/Home/WebDetails/85013" title="Bộ công thương" rel="nofollow">
+                  <img style="width: 180px; display: block;margin-right: 10px;" src="//bizweb.dktcdn.net/100/011/344/themes/857119/assets/dtb.png?1657098603742">
+                  </a>
+                  <a href="https://www.dmca.com/Protection/Status.aspx?ID=798ffd2b-9af4-4da8-b0b9-996ad07994bd&amp;refurl=https://gymstore.vn/huong-dan-thanh-toan-tai-gymstore" title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> 
+                  <img src="https://images.dmca.com/Badges/dmca_protected_25_120.png?ID=798ffd2b-9af4-4da8-b0b9-996ad07994bd" alt="DMCA.com Protection Status">
+                  </a>  
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="bar_mobi">
+         <ul class="">
+            <li>
+               <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                     <path fill="%239B9B9B" fill-rule="evenodd" d="M6.554 10.493h2.892v3.767c0 .224.191.407.426.407h4.369c.235 0 .426-.183.426-.407V6.51c0-.124-.06-.24-.16-.318l-6.24-4.77c-.156-.118-.378-.118-.533 0l-6.24 4.77c-.102.077-.16.194-.16.318v7.75c0 .224.19.407.425.407h4.369c.235 0 .426-.183.426-.407v-3.767zM8 2.261l5.815 4.444v7.148h-3.517v-3.766c0-.225-.19-.407-.426-.407H6.128c-.235 0-.426.182-.426.407v3.766H2.185V6.705L8 2.261z"></path>
+                  </svg>
+                  Trang chủ
+               </a>
+            </li>
+            <li>
+               <div class="burgerBtn" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                     <title>ionicons-v5-i</title>
+                     <rect x="48" y="48" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#7c7c7c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></rect>
+                     <rect x="288" y="48" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#7c7c7c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></rect>
+                     <rect x="48" y="288" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#7c7c7c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></rect>
+                     <rect x="288" y="288" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#7c7c7c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></rect>
+                  </svg>
+                  Menu
+               </div>
+            </li>
+            <li>
+               <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                  </svg>
+                  Giỏ hàng
+               </a>
+            </li>
+            <li class="sale">
+               <a href="">
+               <img src="images/hot-sale.png">
+               Sale
+               </a>
+            </li>
+         </ul>
+      </div>
+      <!-- cart -->
+      <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+      <script src='js/bootstrap.min.js'></script>
+      <script src='js/jquery.sticky.js'></script>
+      <script src='js/slick.js'></script>
+      <script src='js/main.js'></script>
+   </body>
+</html>
