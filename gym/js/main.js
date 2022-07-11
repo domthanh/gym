@@ -29,9 +29,13 @@ $(".search-mb").click(function () {
   $("body").toggleClass("openSearch");
 });
 
+$(".icon-filter").click(function () {
+  $("body").toggleClass("openFilter");
+});
+
 $(".mask").click(function () {
   $("body").removeClass("open");
-  $("body").removeClass("openCart");
+  $("body").removeClass("openFilter");
   $(".navigation").removeClass("show");
 });
 
@@ -100,4 +104,50 @@ $(".brands").slick({
       },
     },
   ],
+});
+
+// show more
+
+$(".show-more").click(function () {
+  $(this).prev().slideToggle(200);
+  $(this).toggleClass("active");
+  if ($(this).hasClass("active")) {
+    $(this).text("Rút gọn");
+  } else {
+    $(this).text("Xem thêm");
+  }
+});
+
+// details
+
+$(function () {
+  $("#aniimated-thumbnials").lightGallery({
+    thumbnail: true,
+    thumbWidth: 80,
+    thumbHeight: 110,
+    thumbMargin: 15,
+    actualSize: false,
+    zoom: false,
+    fullScreen: false,
+    toogleThumb: false,
+    currentPagerPosition: "left",
+  });
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: ".slider-nav",
+    infinite: false,
+  });
+  $(".slider-nav").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    infinite: false,
+  });
 });
