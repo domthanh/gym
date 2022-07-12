@@ -1,16 +1,3 @@
-var menu = $(".header-section");
-$(window).bind("scroll", function (e) {
-  if ($(window).scrollTop() > 140) {
-    if (!menu.hasClass("openNav")) {
-      menu.addClass("openNav");
-    }
-  } else {
-    if (menu.hasClass("openNav")) {
-      menu.removeClass("openNav");
-    }
-  }
-});
-
 // header
 
 $(".burgerBtn").click(function () {
