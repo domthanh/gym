@@ -2026,4 +2026,47 @@ header .navigation .sub_nav .dropdown-menu {
   width: 24px;
   height: 24px;
 }
+
+.addThis_listSharing {
+  position: fixed;
+  bottom: 16px;
+  z-index: 99;
+  right: 16px;
+}
+
+.addThis_listSharing a {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: #ff6633;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff6633;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addThis_listSharing #button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.addThis_listSharing #button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 991px) {
+  .addThis_listSharing {
+    bottom: 65px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
