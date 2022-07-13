@@ -1934,7 +1934,7 @@ header .navigation .sub_nav .dropdown-menu {
 }
 
 .summary-filter .product-rating-overview a {
-  margin: 4px 6px;
+  margin: 4px;
   width: auto;
   padding: 5px 12px;
   color: #333;
@@ -1946,7 +1946,6 @@ header .navigation .sub_nav .dropdown-menu {
 .summary-filter .product-rating-overview a:hover {
   border-color: #ff6633;
   color: #ff6633;
-  margin: 4px;
 }
 
 @media (max-width: 991px) {
